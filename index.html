@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osaode JS Calc</title>
+</head>
+<body>
+    <script>
+        const num1 = parseFloat( prompt('enter first number: '));
+        const operator = prompt('enter operator (+, -, /, *): ');
+        const num2 = parseFloat( prompt('enter second number: '));
+        let result = 0;
+
+        if(isNaN(num1) || isNaN(num2))[
+            alert('Invalid input!')
+        ]
+        else{
+            if(operator == '+')[
+                result = num1 + num2
+            ]
+            else if(operator == '-')[
+                result = num1 - num2
+            ]
+            else if(operator == '/')[
+                result = num1 / num2
+            ]
+            else if(operator == '*')[
+                result = num1 * num2
+            ]
+            document.write(num1 + operator + num2 + ' = ' + result);
+        }
+
+    </script>
+</body>
+</html>
